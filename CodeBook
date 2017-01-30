@@ -1,0 +1,26 @@
+# Code book
+#This code book shows seevral steps for performing the operations scripted in run_analysis.R
+
+1. Call the library `read.table` and 'plyr'
+* The required data for this project is downlaoded from(https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+2.Load feature data set `features.txt` 
+3.Loads and appends train dataset using `X_train.txt`, `y_train.txt`, `subject_train.txt`
+4.Loads and appends test dataset using `X_test.txt`, `y_test.txt`, `subject_test.txt`
+5. Appends train and test data
+6. Rearrange the data using id
+7. Loading activity labels `activity_labels.txt`
+8. Changes the data activity row to use the activity labels
+9. Extracts the `mean`,`std` into dataset1
+10. Saves dataset1 into `result/dataset1.csv`
+11. Uses plur to calculate mean on activity for each id
+12. Appends `_mean` to all data columns
+13. The the tidy data set using 'write.table' command
+
+
+#***Additional information
+#dataset1.csv
+##contains 10299 rows and 81 columns in a default csv format.
+
+#dataset2.csv
+##contains 180 rows and 81 columns in a default csv format.
+
